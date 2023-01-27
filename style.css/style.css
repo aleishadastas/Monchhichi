@@ -1,3 +1,48 @@
 *{
-    background-color: rgb(241, 197, 181);
+    background-color: white;
 }
+
+a:link { text-decoration: none; 
+    color: black;
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: white;
+        flex-direction: row;
+         flex-wrap: wrap;
+        justify-content: center; 
+        width: 100%;
+      }
+      
+      
+      .flex-container > div {
+        background-color: white;
+          margin: 20px;
+        width: 10rem;
+          padding: 20px;
+          font-size: 30px;
+        border: 2px solid black;
+      border-radius: 10px;
+      margin-top: 0px;
+      margin-bottom: 15px;
+      text-align: center;
+      }
+
+      #heaven{
+        transition: all .2s ease-in-out
+      }
+
+      #hell{
+        transition: all .2s ease-in-out
+      }
+
+
+      #heaven:hover { 
+      transform: scale(1.1); 
+      
+      }
+
+      #hell:hover {
+        transform: scale(1.1);
+      }
