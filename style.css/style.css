@@ -1,4 +1,4 @@
-*{
+body{
   background-color: #facbbb;;
     font-family: 'helvetica', sans-serif;
     
@@ -41,19 +41,22 @@ a { text-decoration: none;
        top:0; 
        width: 100vw;
        height: 30px;
-       background-color:black;
+       background-color:none;
        font-size:20px; 
        margin:0;
        left:0;
        justify-content: center;
          line-height: 1.5;
          text-align: center;
-         color: white;
-     }
+         color: black;
+         -webkit-animation: flip-horizontal-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+         animation: flip-horizontal-bottom 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      }
 
      #nav.a {
       color: rgb(255, 255, 255);
-     }
+            }
+            
 
 
     .flex-container {
@@ -139,11 +142,10 @@ background-size: 100px 100px;
     #container { margin: 0%; 
     bottom:0%;
   align-content: center;
-  transform: translate(0px,-4px);
-  z-index: -1;
-background-color: transparent;}
+  transform: translate(0px,-50px);
+background-color: NONE;}
 
-      #circle { position: absolute; width: 100%; padding-bottom: 100%; overflow: hidden;; }
+      #circle { position: absolute; width: 100%; padding-bottom: 100%; overflow: hidden; transform: translate(0px,-50px);; }
       
       #circle text { font-family: 'Helvetica', sans-serif; font-weight: 400; font: size 200 px;px }
       
@@ -192,8 +194,31 @@ background-color: transparent;}
           from { transform: rotate(360deg); }
           to { transform: rotate(0); }
       }
-      
 
-      @media
+
+      @-webkit-keyframes flip-horizontal-bottom {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+                  transform: rotateX(-180deg);
+        }
+      }
+      @keyframes flip-horizontal-bottom {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+                  transform: rotateX(-180deg);
+        }
+      }
+      
+      
+      
+      
 
       
